@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <h2>总价格： {{totalPrice}}</h2>
+        <h2>总价格: {{getTotalPrice()}}</h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                books: [
+                   {id:1,name:'linux编程入门',price:100},
+                   {id:2,name:'深入理解计算机系统',price:101},
+                   {id:3,name:'现代操作系统',price:102},
+                   {id:4,name:'代码大全',price:103},
+                ]
+            },
+            computed:{
+                totalPrice: function(){
+                    let result = 0
+                    for(let i=0;i<this.books.length;i++){
+                        result += this.books[i].price
+                    }
+                    return result;
+                }
+            },
+            methods: {
+                getTotalPrice: function(){
+                    let result=0;
+                    for(let i=0;i<this.books.length;i++){
+                        result += this.books[i].price
+                    }
+                    return result;
+                }
+            },
+        })
+    </script>
+</body>
+</html>

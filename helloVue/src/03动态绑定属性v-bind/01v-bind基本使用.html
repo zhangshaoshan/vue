@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <h2>{{message}}</h2>
+        <img v-bind:src='imageUrl' alt="">
+        <a v-bind:href="alink">百度一下</a>
+        <!-- 语法糖写法 -->
+        <img :src='imageUrl' alt="">
+        <a :href="alink">百度一下</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '你好啊',
+                imageUrl: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593264602788&di=ac234e5a422f8356f8f0496f24f7a5ad&imgtype=0&src=http%3A%2F%2Fpic.baike.soso.com%2Fp%2F20131126%2F20131126131005-2102292767.jpg',
+                alink: 'https://www.baidu.com'
+            }
+        })
+    </script>
+</body>
+</html>

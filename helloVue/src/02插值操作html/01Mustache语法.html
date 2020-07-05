@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- mustache语法，不仅仅能直接引用变量，还能对变量进行简单的运算操作 -->
+        <h2>{{message}},小红</h2>
+        <h2>{{firstName + " " + lastName}}</h2>
+        <h2>{{count * 2}}</h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '我好啊',
+                firstName: "zhang",
+                lastName: "ss",
+                count: 100
+            }
+        })
+    </script>
+</body>
+</html>
