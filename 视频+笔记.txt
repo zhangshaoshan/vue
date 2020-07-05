@@ -1,0 +1,4 @@
+项目： https://blog.csdn.net/qq_43353619/article/details/104827792
+
+笔记：https://github.com/krislinzhao/StudyNotes/tree/master/Vue
+教程：https://www.bilibili.com/video/BV15741177Eh?p=25

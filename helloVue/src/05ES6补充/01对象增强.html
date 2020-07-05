@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <h2>{{message}}</h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript">
+        let app = new Vue({
+            el: '#app',
+            data: {
+                message: '你好啊'
+            }
+        })
+        const name='小明';
+        const age = 10;
+        const height=18.0;
+
+        const obj = {
+            name=name,
+            age=age,
+            height=height,
+            run(){
+                console.log('在跑步') 
+            },
+            eat(){
+                console.log('在吃东西')
+            }
+        }
+    </script>
+</body>
+</html>
